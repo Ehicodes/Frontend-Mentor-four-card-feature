@@ -28,5 +28,75 @@ $font-weight-bold: 600;
 
 body{
     font-family: $font-family;
+    color: $paragraph-color;
+    padding: 1.5rem;
 }
  
+.content{
+    // border: 3px solid red;
+    padding: 2rem;
+    // display: grid;
+    // gap: 1rem;
+    &__texts{
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    &__title{
+        font-size: 1.5rem;
+        font-weight: $font-weight-light;
+    }
+    &__subtitle{
+        font-size: 1.5rem;
+        font-weight: $font-weight-bold;
+        color: $title-color;
+        margin-bottom: 1rem;
+    }
+    &__description{
+        font-size: 1rem;
+        line-height: 1.4;
+        font-weight: $font-weight-normal;
+    }
+    &__cards{
+       display: flex;
+       flex-direction: column;
+       gap: 2.5rem;
+    }
+    &__card{
+        padding: 2rem;
+        display: flex;
+        gap: .2rem;
+        flex-direction: column;
+        background-color: $background-color;
+        border-radius: .5rem; 
+        box-shadow: 0 1.8rem 3rem rgba(44, 59, 80, 0.18);
+    }
+    &__card--supervisor{
+        border-top: 0.3rem solid $top-border-color-1;
+    }
+    &__card--team-builder{
+        border-top: 0.3rem solid $top-border-color-2;
+    }
+    &__card--karma{
+        border-top: 0.3rem solid $top-border-color-3;
+    } 
+    &__card--calculator{
+        border-top: 0.3rem solid $top-border-color-4;
+    }
+    &__card-title{
+        font-size: 1.4rem;
+        color: $title-color;
+        font-weight: $font-weight-bold;
+    }
+    &__card-description{
+        font-size: 1rem;
+        font-weight: $font-weight-normal;
+    }
+    &__card-image{
+       width: 4rem;
+       align-self: end;
+       margin-top: 1rem;
+    }
+}
+
+
+

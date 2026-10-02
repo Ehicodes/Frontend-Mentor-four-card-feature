@@ -16,5 +16,96 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
+  color: #697077;
+  padding: 1.5rem;
+}
+
+.content {
+  padding: 2rem;
+}
+
+.content__texts {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.content__title {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+.content__subtitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #4c4e61;
+  margin-bottom: 1rem;
+}
+
+.content__description {
+  font-size: 1rem;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+.content__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2.5rem;
+}
+
+.content__card {
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: .2rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  border-radius: .5rem;
+  -webkit-box-shadow: 0 1.8rem 3rem rgba(44, 59, 80, 0.18);
+          box-shadow: 0 1.8rem 3rem rgba(44, 59, 80, 0.18);
+}
+
+.content__card--supervisor {
+  border-top: 0.3rem solid #ea5353;
+}
+
+.content__card--team-builder {
+  border-top: 0.3rem solid #45d3d3;
+}
+
+.content__card--karma {
+  border-top: 0.3rem solid #fcaf4a;
+}
+
+.content__card--calculator {
+  border-top: 0.3rem solid #549ef2;
+}
+
+.content__card-title {
+  font-size: 1.4rem;
+  color: #4c4e61;
+  font-weight: 600;
+}
+
+.content__card-description {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.content__card-image {
+  width: 4rem;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  margin-top: 1rem;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;     /* 10px/16px = 62.5 1rem = 10px */
+}
+
+//Colors
+$top-border-color-1: hsl(0, 78%, 62%);
+$top-border-color-2: hsl(180, 62%, 55%);
+$top-border-color-3: hsl(34, 97%, 64%);
+$top-border-color-4: hsl(212, 86%, 64%);
+$background-color:  hsl(0, 0%, 100%);
+$paragraph-color: hsl(212, 6%, 44%);
+$title-color: hsl(234, 12%, 34%);
+
+//Typography
+$font-family: 'Poppins', sans-serif;
+$font-weight-light: 200;
+$font-weight-normal: 400;
+$font-weight-bold: 600;
+
+body{
+    font-family: $font-family;
+}
+ 

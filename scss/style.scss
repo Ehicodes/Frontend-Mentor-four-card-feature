@@ -41,23 +41,6 @@ body{
              justify-content: center;
       }
 }
-.attribution {
-    margin-top: 2rem;
-    font-size: 0.6875rem;
-    text-align: center;
-    line-height: 1.5;
-
-    a {
-        color: hsl(228, 45%, 44%);
-        text-decoration: none;
-    }
-
-    @media only screen and (min-width: 48em) {
-        margin-top: 3rem;
-        font-size: 0.75rem;
-    }
-}
-
 .content{
      padding: 1.7rem;
      @media only screen and (min-width: 48em){

@@ -3,17 +3,13 @@
 *::after {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-size: 62.5%;
-  /* 10px/16px = 62.5 1rem = 10px */
+  box-sizing: border-box;
+  font-size: 62.5%; /* 10px/16px = 62.5 1rem = 10px */
 }
-
 @media only screen and (min-width: 48em) {
   html {
     font-size: 68%;
@@ -22,25 +18,15 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  color: #697077;
+  color: hsl(212, 6%, 44%);
 }
-
 @media only screen and (min-width: 48em) {
   body {
     min-height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -50,12 +36,10 @@ body {
   text-align: center;
   line-height: 1.5;
 }
-
 .attribution a {
-  color: #3e52a3;
+  color: hsl(228, 45%, 44%);
   text-decoration: none;
 }
-
 @media only screen and (min-width: 48em) {
   .attribution {
     margin-top: 3rem;
@@ -66,204 +50,147 @@ body {
 .content {
   padding: 1.7rem;
 }
-
 @media only screen and (min-width: 48em) {
   .content {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     max-width: 100rem;
     padding: 5rem;
-    -webkit-box-shadow: 0 1.8rem 3rem rgba(44, 59, 80, 0.18);
-            box-shadow: 0 1.8rem 3rem rgba(44, 59, 80, 0.18);
+    box-shadow: 0 1.8rem 3rem rgba(44, 59, 80, 0.18);
   }
 }
-
 .content__texts {
   margin-bottom: 2rem;
   text-align: center;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
   grid-column: 2/4;
 }
-
 .content__title {
   font-size: 1.5rem;
   font-weight: 200;
 }
-
 @media only screen and (min-width: 48em) {
   .content__title {
     font-size: 2.5rem;
   }
 }
-
 .content__subtitle {
   font-size: 1.5rem;
   font-weight: 600;
-  color: #4c4e61;
+  color: hsl(234, 12%, 34%);
   margin-bottom: 1rem;
 }
-
 @media only screen and (min-width: 48em) {
   .content__subtitle {
     font-size: 2rem;
   }
 }
-
 .content__description {
   font-size: 1rem;
   line-height: 1.4;
   font-weight: 400;
 }
-
 @media only screen and (min-width: 48em) {
   .content__description {
     font-size: 1.5rem;
   }
 }
-
 @media only screen and (min-width: 48em) {
   .content__cards {
     grid-column: 1/-1;
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 1;
     grid-row: 2/3;
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[15];
-        grid-template-columns: repeat(15, 1fr);
-    -ms-grid-rows: (auto)[4];
-        grid-template-rows: repeat(4, auto);
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(4, auto);
     gap: 1.7rem;
   }
 }
-
 .content__card {
   font-size: 1.1rem;
   padding: 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  gap: .2rem;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-color: white;
-  border-radius: .5rem;
-  -webkit-box-shadow: 0 1.8rem 3rem rgba(44, 59, 80, 0.18);
-          box-shadow: 0 1.8rem 3rem rgba(44, 59, 80, 0.18);
+  gap: 0.2rem;
+  flex-direction: column;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 0.5rem;
+  box-shadow: 0 1.8rem 3rem rgba(44, 59, 80, 0.18);
 }
-
 @media only screen and (min-width: 48em) {
   .content__card {
     font-size: 1.5rem;
   }
 }
-
 .content__card:not(:last-child) {
   margin-bottom: 2.5rem;
 }
-
 @media only screen and (min-width: 48em) {
   .content__card:not(:last-child) {
     margin-bottom: 0;
   }
 }
-
 .content__card--supervisor {
-  border-top: 0.3rem solid #45d3d3;
+  border-top: 0.3rem solid hsl(180, 62%, 55%);
 }
-
 @media only screen and (min-width: 48em) {
   .content__card--supervisor {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 5;
     grid-column: 1/6;
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 2;
     grid-row: 2/4;
   }
 }
-
 .content__card--team-builder {
-  border-top: 0.3rem solid #ea5353;
+  border-top: 0.3rem solid hsl(0, 78%, 62%);
 }
-
 @media only screen and (min-width: 48em) {
   .content__card--team-builder {
-    -ms-grid-column: 6;
-    -ms-grid-column-span: 5;
     grid-column: 6/11;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
     grid-row: 1/3;
   }
 }
-
 .content__card--karma {
-  border-top: 0.3rem solid #549ef2;
+  border-top: 0.3rem solid hsl(212, 86%, 64%);
 }
-
 @media only screen and (min-width: 48em) {
   .content__card--karma {
-    -ms-grid-column: 6;
-    -ms-grid-column-span: 5;
     grid-column: 6/11;
-    -ms-grid-row: 3;
-    -ms-grid-row-span: 2;
     grid-row: 3/5;
   }
 }
-
 .content__card--calculator {
-  border-top: 0.3rem solid #fcaf4a;
+  border-top: 0.3rem solid hsl(34, 97%, 64%);
 }
-
 @media only screen and (min-width: 48em) {
   .content__card--calculator {
     grid-column: 11/-1;
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 2;
     grid-row: 2/4;
   }
 }
-
 .content__card-title {
-  color: #4c4e61;
+  color: hsl(234, 12%, 34%);
   font-weight: 600;
 }
-
 .content__card-description {
   font-weight: 400;
 }
-
 .content__card-image {
   width: 4rem;
-  -ms-flex-item-align: end;
-      -ms-grid-row-align: end;
-      align-self: end;
+  align-self: end;
   margin-top: 1rem;
 }
 
 .attribution {
   margin-top: 2rem;
-  font-size: .8rem;
+  font-size: 0.8rem;
   text-align: center;
   line-height: 1.5;
 }
-
-.attribution a {
-  color: #3e52a3;
-  text-decoration: none;
-}
-
 @media only screen and (min-width: 48em) {
   .attribution {
     margin-top: 3rem;
     font-size: 1.5rem;
   }
 }
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
+
 /*# sourceMappingURL=style.css.map */

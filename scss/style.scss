@@ -141,14 +141,14 @@ body{
          }
     }
     &__card--karma{
-        border-top: 0.3rem solid $top-border-color-4;
+          border-top: 0.3rem solid $top-border-color-4;
          @media only screen and (min-width: 48em){  
                 grid-column: 6/11;
                 grid-row: 3/5;
          }
     } 
     &__card--calculator{
-        border-top: 0.3rem solid $top-border-color-3;
+    border-top: 0.3rem solid $top-border-color-3;
         @media only screen and (min-width: 48em){ 
             grid-column: 11/-1;
             grid-row: 2/4;
@@ -173,15 +173,14 @@ body{
     font-size: .8rem;
     text-align: center;
     line-height: 1.5;
+     @media only screen and (min-width: 48em) {
+        margin-top: 3rem;
+        font-size: 1.5rem;
+    }
 
     a {
         color: $link-color;
         text-decoration: none;
-    }
-
-    @media only screen and (min-width: 48em) {
-        margin-top: 3rem;
-        font-size: 1.5rem;
     }
 }
 
